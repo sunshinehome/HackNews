@@ -13,8 +13,8 @@ class DaynewsSpider(scrapy.Spider):
 
 
     def start_requests(self):
-        base_urls='http://search.freebuf.com/search/find/?year=2016&score=0&articleType=0&origin=0&tabType=1&content=&page='
-        for i in range(1,243):
+        base_urls='http://search.freebuf.com/search/find/?year=2018&score=0&articleType=0&origin=0&tabType=1&content=&page='
+        for i in range(1,607):
             start_urls=base_urls+str(i)
             yield scrapy.Request(start_urls)
 

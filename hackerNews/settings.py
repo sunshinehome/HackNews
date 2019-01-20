@@ -22,7 +22,7 @@ MYSQL_PASSWORD='123456'
 MYSQL_PORT =3306
 
 #你自己数据库的名称
-MYSQL_DB='hnnt'
+MYSQL_DB='proxy'
 CHARSET='utf8mb4'
 
 ITEM_PIPELINES = {'hackerNews.pipelines.HackernewsPipeline': 100,

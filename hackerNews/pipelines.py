@@ -30,7 +30,7 @@ class HackernewsPipeline(object):
             port=3306,
             user='root',
             passwd='123456',
-            db='hnnt',
+            db='proxy',
             charset="utf8mb4"
         )
 
@@ -45,7 +45,7 @@ class HackernewsPipeline(object):
             cur.execute(sql, article)
         except Exception as e:
             con.rollback()
-            print(u'执行'+sql+'\n'+article+'\n'+u'语句时报错，%s'%(e))
+            print(u'执行'+sql+'\n'+'\n'+u'语句时报错，%s'%(e))
             raise
         finally:
             cur.close()
